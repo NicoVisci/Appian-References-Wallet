@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Appian Record Wallet",
+  "version": "1.0",
+  "description": "Auto-expands short keys into long Appian references.",
+  "icons": {
+    "128": "icon.svg"
+  },
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.appian.cloud/*", "https://*.appian.com/*", "https://*.appian.community/*"], 
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

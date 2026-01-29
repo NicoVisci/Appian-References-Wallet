@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 300px; font-family: sans-serif; padding: 10px; }
+    input, button { width: 100%; margin-bottom: 10px; padding: 5px; }
+    .item { border-bottom: 1px solid #ccc; padding: 5px 0; display: flex; justify-content: space-between; }
+    .key { font-weight: bold; color: #0078d7; }
+    .delete-btn { color: red; cursor: pointer; border: none; background: none; text-align: right; width: auto;}
+  </style>
+</head>
+<body>
+  <h3>Add Reference</h3>
+  <input type="text" id="shortKey" placeholder="Short Key (e.g., #veh)">
+  <input type="text" id="longValue" placeholder="Long Reference (e.g., recordType!...)">
+  <button id="saveBtn">Save to Wallet</button>
+  <hr>
+  <div id="list"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
